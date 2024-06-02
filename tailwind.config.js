@@ -8,6 +8,11 @@ module.exports = {
         'label-blue': 'rgb(0, 89, 152)',
         'border-orange': 'rgb(218,165,32)',
       },
+      fontFamily: {
+        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 
+               '"Helvetica Neue"', 'Arial', 'sans-serif', 
+               '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"'],
+      },
     },
   },
   plugins: [],
