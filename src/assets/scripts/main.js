@@ -6,11 +6,8 @@
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
+import 'animate.css';
+
 /**
  * Write any other JavaScript below
  */
-
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
