@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-      <a href="./participantes.html">Participantes</a>
-      <a href="./inscripcion.html">Inscripción</a>
-      <a href="./ia.html">Página IA</a>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+        <title>Participantes</title>
+    </head>
+    <body class="font-sans">
+        <include src="./views/header.html"></include>
+        <main class="container mx-auto px-12 lg:px-28">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-semibold text-title-blue animate__animated animate__backInLeft"><i class="fa-solid fa-users"></i> Participantes en el concurso</h1>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <include src="./views/card.html">
+                    {
+                        "imageSrc": "./assets/images/chef1.jpg",
+                        "imageAlt": "Foto de Diego Sarmiento Luna",
+                        "name": "Diego Sarmiento Luna",
+                        "description": "Residente de Vejer de la Frontera, tiene una pasión desbordante por la cocina tradicional de la comarca de la Janda. Su especialidad radica en la preparación de deliciosas 'tortillas de camarones', un plato emblemático de la región que ha perfeccionado con su toque personal."
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "imageSrc": "./assets/images/chef2.jpg",
+                        "imageAlt": "Foto de Javier Montesinos Cruz",
+                        "name": "Javier Montesinos Cruz",
+                        "description": "Amante de la buena comida de Conil de la Frontera, destaca por su habilidad para preparar exquisitos platos de pescado fresco. Su especialidad es la 'lubina al horno', una receta que ha aprendido de generación en generación y que ha elevado a la perfección."
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "imageSrc": "./assets/images/chef3.jpg",
+                        "imageAlt": "Foto de Catalina Ríos Soler",
+                        "name": "Catalina Ríos Soler",
+                        "description": "Entusiasta de la cocina de Barbate, encuentra su pasión en la creación de platos innovadores utilizando los productos locales más frescos. Su especialidad es el 'atún encebollado al estilo de la Janda', un plato que combina la tradición con un toque contemporáneo."
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "imageSrc": "./assets/images/chef4.jpg",
+                        "imageAlt": "Foto de Valeria Vargas Rojas",
+                        "name": "Valeria Vargas Rojas",
+                        "description": "Nacida en Medina Sidonia, ha desarrollado una destreza única para la cocina utilizando la carne de vaca retinta. Su plato estrella son las 'albóndigas de retinto en salsa de vino blanco', una receta que combina la jugosidad de la carne con los sabores intensos de la salsa, creando una experiencia culinaria inolvidable."
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "imageSrc": "./assets/images/chef5.jpg",
+                        "imageAlt": "Foto de Natalia Cárdenas Flores",
+                        "name": "Natalia Cárdenas Flores",
+                        "description": "Oriunda de Alcalá de los Gazules, destaca por su dominio en la preparación de platos de caza típicos de la región. Su especialidad es el 'venado en salsa de setas', un manjar capaz de cautivar a los paladares más exigentes de la comarca."
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "imageSrc": "./assets/images/chef6.jpg",
+                        "imageAlt": "Foto de Gabriel Ochoa Mendoza",
+                        "name": "Gabriel Ochoa Mendoza",
+                        "description": "Natural de Benalup-Casas Viejas, encuentra su pasión en la elaboración de platos tradicionales con un toque creativo. Su especialidad es la elaboración del 'arroz a la morisca', un plato emblemático de la cocina local que combina una exquisita mezcla de especias con ingredientes frescos y locales."
+                    }
+                </include>
+            </div>
+        </main>
+        <include src="views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    </body>
 </html>
+
